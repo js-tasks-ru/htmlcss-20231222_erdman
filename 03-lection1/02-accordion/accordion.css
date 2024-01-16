@@ -4,6 +4,7 @@
   border-radius: 8px;
   margin-bottom: 8px;
 
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -16,7 +17,6 @@
 .accordion__summary {
   list-style: none;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
 }
 .accordion__summary::-webkit-details-marker {
   display: none;
@@ -25,5 +25,4 @@
 .accordion__content {
   margin: 16px 0 8px 0;
   color: var(--grey-4);
-  font-family: 'Inter', sans-serif;
 }
