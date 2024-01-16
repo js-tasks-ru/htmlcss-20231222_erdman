@@ -28,7 +28,7 @@
   --secondary-dark: var(--purple-4);
 }
 
-* {
+body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
 }

@@ -4,6 +4,7 @@
   border: 1px solid transparent;
   background: var(--gray-4);
   color: var(--white);
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -15,26 +16,26 @@
     border-color 200ms;
 }
 
-button:disabled {
+.button:disabled {
   opacity: 0.5;
-  cursor: not-allowed;
+  pointer-events: none;
 }
 
-button:active:not(:disabled) {
+.button:active {
   opacity: 0.9;
 }
 
 .button_primary {
   background-color: var(--primary);
 }
-.button_primary:hover:not(:disabled) {
+.button_primary:hover {
   background-color: var(--primary-dark);
 }
 
 .button_secondary {
   background-color: var(--secondary);
 }
-.button_secondary:hover:not(:disabled) {
+.button_secondary:hover {
   background-color: var(--secondary-dark);
 }
 
@@ -43,6 +44,6 @@ button:active:not(:disabled) {
   background-color: var(--white);
   color: var(--gray-4);
 }
-.button_alternate:hover:not(:disabled) {
+.button_alternate:hover {
   border-color: var(--black);
 }
