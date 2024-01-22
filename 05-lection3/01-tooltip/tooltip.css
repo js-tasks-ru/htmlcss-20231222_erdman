@@ -1,0 +1,88 @@
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip__trigger:hover ~ .tooltip__bubble {
+  display: block;
+}
+
+.tooltip__bubble {
+  --arrow-size: 6px;
+  --bubble-color: var(--primary);
+  --bubble-margin: 2px;
+
+  --bubble-offset: calc(100% + var(--arrow-size) + var(--bubble-margin));
+
+  position: absolute; 
+  display: none;
+  padding: 13px 21px 8px 21px;
+  background: var(--bubble-color);
+  border-radius: 10px;
+
+  color: var(--gray-2);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.tooltip__bubble_wrap {
+  white-space: normal;
+}
+
+.tooltip__bubble::before {
+  content: '';
+  position: absolute;
+  border: var(--arrow-size) solid transparent;
+}
+
+.tooltip__bubble_top {
+  bottom: var(--bubble-offset);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tooltip__bubble_top::before {
+  border-top-color: var(--bubble-color);
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip__bubble_bottom {
+  top: var(--bubble-offset);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tooltip__bubble_bottom::before {
+  border-bottom-color: var(--bubble-color);
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip__bubble_right {
+  left: var(--bubble-offset);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.tooltip__bubble_right::before {
+  border-right-color: var(--bubble-color);
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+}
+
+.tooltip__bubble_left {
+  right: var(--bubble-offset);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.tooltip__bubble_left::before {
+  border-left-color: var(--bubble-color);
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+}
