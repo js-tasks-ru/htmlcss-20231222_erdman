@@ -1,7 +1,7 @@
 .calendar {
-  overflow: auto;
   box-sizing: border-box;
-  
+  min-width: 260px;
+
   padding: 28px 26px 32px;
   border: 1px solid var(--gray-3);
   border-radius: 8px;
@@ -21,8 +21,6 @@
 .calendar__container {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 1fr 8px;
-  grid-auto-rows: 1fr;
 
   width: 100%;
   margin-top: 16px;
@@ -45,14 +43,11 @@
 }
 
 .calendar__item_header {
+  margin-bottom: 8px;
+
   color: var(--gray-3);
   font-family: 'Inter';
   font-size: 14px;
-}
-
-.calendar__item_header-gap {
-  grid-column: 1 / span 7;
-  aspect-ratio: auto;
 }
 
 .calendar__item_selected {
