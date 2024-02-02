@@ -1,0 +1,43 @@
+.body {
+  min-height: 100vh;
+  background-image: url('./public/forest_400.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-resolution: 2x) {
+  .body {
+    background-image: url('./public/forest_768.jpg');
+  }
+}
+
+@media (min-width: 768px), (min-height: 432px) {
+  .body {
+    background-image: url('./public/forest_768.jpg');
+  }
+
+  @media (min-resolution: 2x) {
+    .body {
+      background-image: url('./public/forest_1024.jpg');
+    }
+  }
+}
+
+@media (min-width: 1024px), (min-height: 576px)  {
+  .body {
+    background-image: url('./public/forest_1024.jpg');
+  }
+
+  @media (min-resolution: 2x) {
+    .body {
+      background-image: url('./public/forest_2560.jpg');
+    }
+  }
+}
+
+@media (min-width: 2560px), (min-height: 1440px) {
+  .body {
+    background-image: url('./public/forest_2560.jpg');
+  }
+}
