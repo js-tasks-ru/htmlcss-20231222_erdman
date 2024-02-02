@@ -16,23 +16,23 @@
   .body {
     background-image: url('./public/forest_768.jpg');
   }
-
-  @media (min-resolution: 2x) {
-    .body {
-      background-image: url('./public/forest_1024.jpg');
-    }
-  }
 }
-
-@media (min-width: 1024px), (min-height: 576px)  {
+@media (min-resolution: 2x) and (min-width: 768px),
+  (min-resolution: 2x) and (min-height: 432px) {
   .body {
     background-image: url('./public/forest_1024.jpg');
   }
+}
 
-  @media (min-resolution: 2x) {
-    .body {
-      background-image: url('./public/forest_2560.jpg');
-    }
+@media (min-width: 1024px), (min-height: 576px) {
+  .body {
+    background-image: url('./public/forest_1024.jpg');
+  }
+}
+@media (min-resolution: 2x) and (min-width: 1024px),
+  (min-resolution: 2x) and (min-height: 576px) {
+  .body {
+    background-image: url('./public/forest_2560.jpg');
   }
 }
 
