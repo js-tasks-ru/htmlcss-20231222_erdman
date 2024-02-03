@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./checkbox.css" />
   </head>
   <body>
-    <div style="margin: 8px">
+    <div style="margin: 8px; display: inline-flex; flex-direction: column; gap: 16px">
       <label class="checkbox">
         <input class="checkbox__input" type="checkbox" />
         <div class="checkbox__state">
@@ -16,6 +16,42 @@
             </svg>
           </div>
           <span class="checkbox__label">Default</span>
+        </div>
+      </label>
+
+      <label class="checkbox">
+        <input class="checkbox__input" type="checkbox" checked />
+        <div class="checkbox__state">
+          <div class="checkbox__control">
+            <svg class="svg-icon checkbox__icon">
+              <use href="../../assets/images/icons.svg#tick" />
+            </svg>
+          </div>
+          <span class="checkbox__label">Checked</span>
+        </div>
+      </label>
+
+      <label class="checkbox">
+        <input class="checkbox__input" type="checkbox" disabled />
+        <div class="checkbox__state">
+          <div class="checkbox__control">
+            <svg class="svg-icon checkbox__icon">
+              <use href="../../assets/images/icons.svg#tick" />
+            </svg>
+          </div>
+          <span class="checkbox__label">Disabled</span>
+        </div>
+      </label>
+
+      <label class="checkbox">
+        <input class="checkbox__input" type="checkbox" disabled checked />
+        <div class="checkbox__state">
+          <div class="checkbox__control">
+            <svg class="svg-icon checkbox__icon">
+              <use href="../../assets/images/icons.svg#tick" />
+            </svg>
+          </div>
+          <span class="checkbox__label">Checked disabled</span>
         </div>
       </label>
     </div>
