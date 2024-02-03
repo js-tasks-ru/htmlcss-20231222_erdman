@@ -6,13 +6,42 @@
     <link rel="stylesheet" href="./toggler.css" />
   </head>
   <body>
-    <div style="margin: 8px">
+    <div
+      style="
+        margin: 8px;
+        display: inline-flex;
+        flex-direction: column;
+        gap: 16px;
+      "
+    >
+      <label class="toggler">
+        <input class="toggler__input" type="checkbox" />
+        <div class="toggler__state">
+          <div class="toggler__control"></div>
+          <span class="toggler__label">Default</span>
+        </div>
+      </label>
+
       <label class="toggler">
         <input class="toggler__input" type="checkbox" checked />
         <div class="toggler__state">
-          <div class="toggler__control">
-            <div class="toggler__handle"></div>
-          </div>
+          <div class="toggler__control"></div>
+          <span class="toggler__label">Default</span>
+        </div>
+      </label>
+
+      <label class="toggler">
+        <input class="toggler__input" type="checkbox" disabled />
+        <div class="toggler__state">
+          <div class="toggler__control"></div>
+          <span class="toggler__label">Default</span>
+        </div>
+      </label>
+
+      <label class="toggler">
+        <input class="toggler__input" type="checkbox" disabled checked />
+        <div class="toggler__state">
+          <div class="toggler__control"></div>
           <span class="toggler__label">Default</span>
         </div>
       </label>
