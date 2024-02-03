@@ -36,3 +36,9 @@ body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+.svg-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}

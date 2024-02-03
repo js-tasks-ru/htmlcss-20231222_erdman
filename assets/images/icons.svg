@@ -65,7 +65,7 @@
       />
     </symbol>
 
-    <symbol viewBox="0 0 16 16" fill="none">
+    <symbol id="close" viewBox="0 0 16 16" fill="none">
       <path
         d="M12.4714 3.52861C12.7318 3.78896 12.7318 4.21107 12.4714 4.47141L4.47141 12.4714C4.21107 12.7318 3.78896 12.7318 3.52861 12.4714C3.26826 12.2111 3.26826 11.789 3.52861 11.5286L11.5286 3.52861C11.789 3.26826 12.2111 3.26826 12.4714 3.52861Z"
         fill-rule="evenodd" clip-rule="evenodd"
@@ -76,6 +76,6 @@
         fill-rule="evenodd" clip-rule="evenodd"
         fill="currentColor"
       />
-    </svg>
+    </symbol>
   </defs>
 </svg>
