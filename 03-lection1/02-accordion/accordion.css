@@ -15,11 +15,28 @@
 }
 
 .accordion__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   list-style: none;
   cursor: pointer;
 }
 .accordion__summary::-webkit-details-marker {
   display: none;
+}
+
+.accordion__marker {
+  flex-shrink: 0;
+
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  color: var(--gray-4);
+}
+
+.accordion__item[open] .accordion__marker {
+  transform: rotate(180deg);
 }
 
 .accordion__content {
