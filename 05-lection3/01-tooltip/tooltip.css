@@ -3,6 +3,11 @@
   display: inline-block;
 }
 
+.tooltip__icon {
+  width: 24px;
+  height: 24px;
+}
+
 .tooltip__trigger:hover ~ .tooltip__bubble {
   display: block;
 }

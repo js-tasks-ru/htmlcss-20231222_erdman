@@ -48,6 +48,11 @@
   cursor: pointer;
 }
 
+.modal__close-icon {
+  width: 16px;
+  height: 16px;
+}
+
 .modal__header {
   margin-bottom: 14px;
 }
