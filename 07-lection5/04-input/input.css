@@ -9,7 +9,7 @@
 
 .input__label {
   margin-bottom: 5px;
-  
+
   color: var(--gray-3);
   font-family: 'Inter';
   font-size: 12px;
@@ -48,35 +48,28 @@
   top: 16px;
   right: 16px;
 
-  display: flex;
   width: 24px;
   height: 24px;
 
-  visibility: hidden;
+  display: none;
 }
 
-.input__icon-success {
-  display: none;
+.input__icon_success {
   color: var(--primary);
 }
 
-.input__icon-invalid {
-  display: none;
+.input__icon_invalid {
   color: var(--error);
 }
 
+/* Резервирование места под иконку */
 .input_success .input__field,
 .input_invalid .input__field {
   padding-right: 56px;
 }
 
-.input_success .input__icon,
-.input_invalid .input__icon {
-  visibility: visible;
-}
-
 /* Success */
-.input_success .input__icon-success {
+.input_success .input__icon_success {
   display: block;
 }
 
@@ -84,7 +77,7 @@
 .input_invalid .input__field {
   border-color: var(--error);
 }
-.input_invalid .input__icon-invalid {
+.input_invalid .input__icon_invalid {
   display: block;
 }
 
