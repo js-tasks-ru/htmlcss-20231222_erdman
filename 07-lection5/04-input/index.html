@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+  <body>
+    <div style="margin: 8px; display: inline-flex; flex-direction: column; gap: 16px">
+      <div class="input">
+        <label class="input__label" for="input-id">Label</label>
+        <div class="input__container">
+          <input id="input-id" class="input__field" type="text" placeholder="Placeholder" />
+          <svg class="svg-icon input__icon input__icon_success">
+            <use href="../../assets/images/icons.svg#success"></use>
+          </svg>
+          <svg class="svg-icon input__icon input__icon_invalid">
+            <use href="../../assets/images/icons.svg#error"></use>
+          </svg>
+        </div>
+      </div>
 
-    </body>
+      <div class="input input_success">
+        <label class="input__label" for="input-id">Success</label>
+        <div class="input__container">
+          <input id="input-id" class="input__field" type="text" placeholder="Placeholder" value="Success" />
+          <svg class="svg-icon input__icon input__icon_success">
+            <use href="../../assets/images/icons.svg#success"></use>
+          </svg>
+          <svg class="svg-icon input__icon input__icon_invalid">
+            <use href="../../assets/images/icons.svg#error"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="input input_invalid">
+        <label class="input__label" for="input-id">Invalid</label>
+        <div class="input__container">
+          <input id="input-id" class="input__field" type="text" placeholder="Placeholder" value="Invalid" />
+          <svg class="svg-icon input__icon input__icon_success">
+            <use href="../../assets/images/icons.svg#success"></use>
+          </svg>
+          <svg class="svg-icon input__icon input__icon_invalid">
+            <use href="../../assets/images/icons.svg#error"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
